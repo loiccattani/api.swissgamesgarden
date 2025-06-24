@@ -1,5 +1,5 @@
 # staging.api.gos.ch
-set :deploy_to, '/srv/staging-api.gos.ch'
+set :deploy_to, '/srv/staging-api.tstsgg.unil.ch'
 
 # set a branch for this release
 set :branch, 'dev'
