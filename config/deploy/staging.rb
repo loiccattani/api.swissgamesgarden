@@ -5,7 +5,7 @@ set :deploy_to, '/srv/staging-api.gos.ch'
 set :branch, 'dev'
 
 # define environment-specific server
-server 'tstsgg.unil.ch', port: '44144', user: 'tstsgg', roles: %w{app db web}
+server 'tstsgg.unil.ch', port: '44144', user: 'admsgg', roles: %w{app db web}
 
 # Map docker and docker-compose commands
 # NOTE: If stage have different deploy_to
