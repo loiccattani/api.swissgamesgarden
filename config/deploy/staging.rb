@@ -4,6 +4,8 @@ set :deploy_to, '/srv/staging-api.gos.ch'
 # set a branch for this release
 set :branch, 'dev'
 
+server 'tstsgg.unil.ch', port: '44144', user: 'deploy', roles: %w{app db web}
+
 # Map docker and docker-compose commands
 # NOTE: If stage have different deploy_to
 # you have to copy those line for each <stage_name>.rb
