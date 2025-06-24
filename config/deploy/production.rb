@@ -4,7 +4,7 @@ set :deploy_to, '/srv/api.gos.ch'
 # set a branch for this release
 set :branch, 'master'
 
-server 'prdsgg.unil.ch', port: '44144', user: 'deploy', roles: %w{app db web}
+server 'prdsgg.unil.ch', port: '44144', user: 'sggadm', roles: %w{app db web}
 
 # Map docker and docker-compose commands
 # NOTE: If stage have different deploy_to
