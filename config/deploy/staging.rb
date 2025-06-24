@@ -4,7 +4,7 @@ set :deploy_to, '/srv/staging-api.gos.ch'
 # set a branch for this release
 set :branch, 'dev'
 
-# define environment-specific server
+# define environment-specific server for deployment
 server 'tstsgg.unil.ch', port: '44144', user: 'admsgg', roles: %w{app db web}
 
 # Map docker and docker-compose commands
