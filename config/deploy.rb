@@ -2,7 +2,7 @@
 lock '3.5.0'
 
 set :application, 'gos'
-set :repo_url, 'git@github.com:Games-of-Switzerland/gos-server.git'
+set :repo_url, 'git@github.com:loiccattani/api.swissgamesgarden.git'
 
 set :app_path, "web"
 
