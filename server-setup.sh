@@ -10,10 +10,10 @@ su deploy
 cd
 
 # Add SSH key(s) for the new user
-sudo mkdir -p .ssh
-sudo touch .ssh/authorized_keys
-sudo chmod 700 .ssh
-sudo chmod 600 .ssh/authorized_keys
+mkdir -p .ssh
+touch .ssh/authorized_keys
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
 # → Copy the public key to the authorized_keys file
 
 # Test SSH access
@@ -22,3 +22,8 @@ sudo chmod 600 .ssh/authorized_keys
 sudo chgrp -R deploy /srv
 sudo chmod -R g+w /srv
 
+#### New 08.2025 - Manage Docker as a non-root user
+
+# sudo groupadd docker # (existed already)
+sudo usermod -aG docker admsgg
+sudo usermod -aG docker deploy
